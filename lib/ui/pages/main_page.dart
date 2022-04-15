@@ -8,8 +8,6 @@ class MainPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-
-    // buildContent
     Widget buildContent(){
       return HomePage();
     }

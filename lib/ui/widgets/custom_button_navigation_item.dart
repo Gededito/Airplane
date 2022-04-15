@@ -21,12 +21,8 @@ class CustomBottomNavigationItem extends StatelessWidget{
         Container(
           width: 24,
           height: 24,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                imageUrl,
-              ),
-            ),
+          child: Image.asset(
+            imageUrl,
           ),
         ),
         Container(

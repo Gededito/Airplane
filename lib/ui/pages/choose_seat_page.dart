@@ -334,7 +334,7 @@ class ChooseSeatPage extends StatelessWidget{
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       );

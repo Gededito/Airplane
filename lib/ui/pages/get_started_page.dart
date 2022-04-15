@@ -1,4 +1,5 @@
 import 'package:airplane/ui/widgets/custom_button.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';
 
@@ -11,14 +12,10 @@ class GetStartedPage extends StatelessWidget{
       body: Stack(
         children: [
           Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'assets/image_get_started.png',
-                ),
-              ),
+            child: Image.asset(
+              'assets/image_get_started.png',
+              width: double.infinity,
+              height: double.infinity,
             ),
           ),
           Center(
@@ -55,37 +52,6 @@ class GetStartedPage extends StatelessWidget{
                     Navigator.pushNamed(context, '/sign-up');
                   },
                 ),
-
-                // Sebuah Container Untuk Button
-                // Container(
-                //   width: 220,
-                //   height: 55,
-                //   margin: EdgeInsets.only(
-                //       top: 50,
-                //       bottom: 80,
-                //   ),
-                //   child: TextButton(
-                //     onPressed: (){
-                //       Navigator.pushNamed(context, '/sign-up');
-                //     },
-                //     style: TextButton.styleFrom(
-                //       backgroundColor: kPrimaryColor,
-                //       shape: RoundedRectangleBorder(
-                //         borderRadius: BorderRadius.circular(
-                //             defaultRadius
-                //         ),
-                //       ),
-                //     ),
-                //     child: Text(
-                //       'Get Started',
-                //       style: whiteTextStyle.copyWith(
-                //         fontSize: 18,
-                //         fontWeight: medium,
-                //       ),
-                //     ),
-                //   ),
-                // ),
-                // Akhir Container Button
               ],
             ),
           ),

@@ -24,12 +24,8 @@ class BookingDetailsItem extends StatelessWidget{
             width: 16,
             height: 16,
             margin: EdgeInsets.only(right: 6),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'assets/icon_check.png',
-                ),
-              ),
+            child: Image.asset(
+              'assets/icon_check.png',
             ),
           ),
           Text(

@@ -81,13 +81,16 @@ class DestinationCard extends StatelessWidget{
                         margin: EdgeInsets.only(
                           right: 2,
                         ),
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage(
-                              'assets/icon_star.png',
-                            ),
-                          ),
+                        child: Image.asset(
+                          'assets/icon_star.png',
                         ),
+                        // decoration: BoxDecoration(
+                        //   image: DecorationImage(
+                        //     image: AssetImage(
+                        //       'assets/icon_star.png',
+                        //     ),
+                        //   ),
+                        // ),
                       ),
                       Text(
                         rating.toString(),
